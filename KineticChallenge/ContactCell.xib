@@ -6,13 +6,50 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="ntR-TT-w09">
-            <rect key="frame" x="0.0" y="0.0" width="340" height="80"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ntR-TT-w09" id="LNH-Wz-MtY">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="80" reuseIdentifier="ContactCell" rowHeight="86" id="KGk-i7-Jjw" customClass="ContactCell">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqc-RS-mDs">
+                        <rect key="frame" x="95" y="5" width="228" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdQ-4Y-lgd">
+                        <rect key="frame" x="95" y="23" width="228" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cell" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZjT-Kr-pDN">
+                        <rect key="frame" x="95" y="41" width="228" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cu8-bB-jyG">
+                        <rect key="frame" x="95" y="60" width="228" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XXD-rX-rdF">
+                        <rect key="frame" x="8" y="5" width="79" height="73.5"/>
+                    </imageView>
+                </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="376" y="206"/>
+            <connections>
+                <outlet property="cellLabel" destination="ZjT-Kr-pDN" id="l0N-Ym-ZfB"/>
+                <outlet property="emailLabel" destination="JdQ-4Y-lgd" id="Z72-h1-ark"/>
+                <outlet property="nameLabel" destination="eqc-RS-mDs" id="8VT-sY-YRX"/>
+                <outlet property="phoneLabel" destination="Cu8-bB-jyG" id="aQ3-7v-Jbj"/>
+                <outlet property="userImageView" destination="XXD-rX-rdF" id="1G9-is-ByQ"/>
+            </connections>
+            <point key="canvasLocation" x="410.5" y="388"/>
         </tableViewCell>
     </objects>
 </document>

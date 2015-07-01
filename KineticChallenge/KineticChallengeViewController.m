@@ -8,6 +8,7 @@
 
 #import "KineticChallengeViewController.h"
 #import "RandomUser.h"
+#import "ContactCell.h"
 
 @interface KineticChallengeViewController ()
 
@@ -33,15 +34,25 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     RandomUser *user = [self.contacts.randomUserList objectAtIndex:indexPath.row];
-    static NSString *simpleTableIdentifier = @"SimpleTableCell";
+    static NSString *ContactCellIdentifier = @"ContactCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    ContactCell *cell = [tableView dequeueReusableCellWithIdentifier:ContactCellIdentifier];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ContactCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.textLabel.text = user.firstName;
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@ %@", user.firstName, user.lastName];
+    cell.emailLabel.text = user.email;
+    cell.cellLabel.text = user.cellNumber;
+    cell.phoneLabel.text = user.phoneNumber;
+    
+    NSURL *url = [NSURL URLWithString:user.imageUrl];
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *image = [UIImage imageWithData:data];
+    cell.userImageView.image = image;
+    
     return cell;
 }
 

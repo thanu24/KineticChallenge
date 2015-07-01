@@ -19,6 +19,7 @@
 		98E39D311B44783000470E8D /* ContactCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D2F1B44783000470E8D /* ContactCell.m */; };
 		98E39D321B44783000470E8D /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E39D301B44783000470E8D /* ContactCell.xib */; };
 		98E39D341B4484DC00470E8D /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D331B4484DC00470E8D /* ViewControllerTests.m */; };
+		98E39D361B44910800470E8D /* RandomUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D351B44910800470E8D /* RandomUserTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		98E39D2F1B44783000470E8D /* ContactCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactCell.m; sourceTree = "<group>"; };
 		98E39D301B44783000470E8D /* ContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 		98E39D331B4484DC00470E8D /* ViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
+		98E39D351B44910800470E8D /* RandomUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomUserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				98E39D161B444A8000470E8D /* KineticChallengeTests.m */,
 				98E39D141B444A8000470E8D /* Supporting Files */,
 				98E39D331B4484DC00470E8D /* ViewControllerTests.m */,
+				98E39D351B44910800470E8D /* RandomUserTests.m */,
 			);
 			path = KineticChallengeTests;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98E39D341B4484DC00470E8D /* ViewControllerTests.m in Sources */,
+				98E39D361B44910800470E8D /* RandomUserTests.m in Sources */,
 				98E39D171B444A8000470E8D /* KineticChallengeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

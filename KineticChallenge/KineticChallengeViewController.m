@@ -30,7 +30,7 @@ long const ContactsCount = 10;
 #pragma UITableViewDataSourceDelegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.contacts.randomUserList count];
+    return ContactsCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

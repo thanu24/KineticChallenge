@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContactList.h"
 
-@interface ViewController : UIViewController
+@interface KineticChallengeViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, strong) ContactList *contacts;
 
 @end
 

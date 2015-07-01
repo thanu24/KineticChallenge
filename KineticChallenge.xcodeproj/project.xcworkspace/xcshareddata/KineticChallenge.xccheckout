@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>01691B20-D321-4002-9995-1794394FAACB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8D33D87AF92C6A58AF063DDEF19A15B380198ADA</key>
+		<string>https://github.com/thanu24/KineticChallenge.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KineticChallenge.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8D33D87AF92C6A58AF063DDEF19A15B380198ADA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thanu24/KineticChallenge.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8D33D87AF92C6A58AF063DDEF19A15B380198ADA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8D33D87AF92C6A58AF063DDEF19A15B380198ADA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KineticChallenge</string>
+		</dict>
+	</array>
+</dict>
+</plist>

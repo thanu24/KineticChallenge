@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		98E39CFD1B444A7F00470E8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39CFC1B444A7F00470E8D /* main.m */; };
 		98E39D001B444A7F00470E8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39CFF1B444A7F00470E8D /* AppDelegate.m */; };
-		98E39D031B444A7F00470E8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D021B444A7F00470E8D /* ViewController.m */; };
+		98E39D031B444A7F00470E8D /* KineticChallengeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D021B444A7F00470E8D /* KineticChallengeViewController.m */; };
 		98E39D061B444A7F00470E8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E39D041B444A7F00470E8D /* Main.storyboard */; };
 		98E39D081B444A8000470E8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E39D071B444A8000470E8D /* Images.xcassets */; };
 		98E39D0B1B444A8000470E8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E39D091B444A8000470E8D /* LaunchScreen.xib */; };
 		98E39D171B444A8000470E8D /* KineticChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D161B444A8000470E8D /* KineticChallengeTests.m */; };
+		98E39D241B44611000470E8D /* RandomUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D231B44611000470E8D /* RandomUser.m */; };
+		98E39D271B4462D100470E8D /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E39D261B4462D100470E8D /* ContactList.m */; };
+		98E39D291B4473CE00470E8D /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E39D281B4473CE00470E8D /* ContactCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +35,19 @@
 		98E39CFC1B444A7F00470E8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98E39CFE1B444A7F00470E8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98E39CFF1B444A7F00470E8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		98E39D011B444A7F00470E8D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		98E39D021B444A7F00470E8D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		98E39D011B444A7F00470E8D /* KineticChallengeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KineticChallengeViewController.h; sourceTree = "<group>"; };
+		98E39D021B444A7F00470E8D /* KineticChallengeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KineticChallengeViewController.m; sourceTree = "<group>"; };
 		98E39D051B444A7F00470E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98E39D071B444A8000470E8D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		98E39D0A1B444A8000470E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		98E39D101B444A8000470E8D /* KineticChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KineticChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E39D151B444A8000470E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98E39D161B444A8000470E8D /* KineticChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KineticChallengeTests.m; sourceTree = "<group>"; };
+		98E39D221B44611000470E8D /* RandomUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomUser.h; sourceTree = "<group>"; };
+		98E39D231B44611000470E8D /* RandomUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomUser.m; sourceTree = "<group>"; };
+		98E39D251B4462D100470E8D /* ContactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
+		98E39D261B4462D100470E8D /* ContactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
+		98E39D281B4473CE00470E8D /* ContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +91,17 @@
 			children = (
 				98E39CFE1B444A7F00470E8D /* AppDelegate.h */,
 				98E39CFF1B444A7F00470E8D /* AppDelegate.m */,
-				98E39D011B444A7F00470E8D /* ViewController.h */,
-				98E39D021B444A7F00470E8D /* ViewController.m */,
+				98E39D011B444A7F00470E8D /* KineticChallengeViewController.h */,
+				98E39D021B444A7F00470E8D /* KineticChallengeViewController.m */,
 				98E39D041B444A7F00470E8D /* Main.storyboard */,
 				98E39D071B444A8000470E8D /* Images.xcassets */,
 				98E39D091B444A8000470E8D /* LaunchScreen.xib */,
 				98E39CFA1B444A7F00470E8D /* Supporting Files */,
+				98E39D221B44611000470E8D /* RandomUser.h */,
+				98E39D231B44611000470E8D /* RandomUser.m */,
+				98E39D251B4462D100470E8D /* ContactList.h */,
+				98E39D261B4462D100470E8D /* ContactList.m */,
+				98E39D281B4473CE00470E8D /* ContactCell.xib */,
 			);
 			path = KineticChallenge;
 			sourceTree = "<group>";
@@ -199,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98E39D291B4473CE00470E8D /* ContactCell.xib in Resources */,
 				98E39D061B444A7F00470E8D /* Main.storyboard in Resources */,
 				98E39D0B1B444A8000470E8D /* LaunchScreen.xib in Resources */,
 				98E39D081B444A8000470E8D /* Images.xcassets in Resources */,
@@ -219,9 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E39D031B444A7F00470E8D /* ViewController.m in Sources */,
+				98E39D031B444A7F00470E8D /* KineticChallengeViewController.m in Sources */,
+				98E39D271B4462D100470E8D /* ContactList.m in Sources */,
 				98E39D001B444A7F00470E8D /* AppDelegate.m in Sources */,
 				98E39CFD1B444A7F00470E8D /* main.m in Sources */,
+				98E39D241B44611000470E8D /* RandomUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +434,7 @@
 				98E39D1C1B444A8000470E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		98E39D1D1B444A8000470E8D /* Build configuration list for PBXNativeTarget "KineticChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				98E39D1F1B444A8000470E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

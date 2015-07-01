@@ -16,9 +16,11 @@
 
 @implementation KineticChallengeViewController
 
+long const ContactsCount = 10;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.contacts = [[ContactList alloc] initWithCount:10];
+    self.contacts = [[ContactList alloc] initWithCount:ContactsCount];
 }
 
 - (void)didReceiveMemoryWarning {

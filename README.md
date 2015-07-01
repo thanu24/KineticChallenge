@@ -1,4 +1,5 @@
 My Overall Approach:
+
 I decided to create a native iOS application using objective-c. I went with a MVC design with a single view for this project. 
 The model contains a list of random users retrieved from the https://randomuser.me/ api. The view contains a table view that 
 displays the users' name, email, phone numbers and image. I used a constant value of 10 as the number of users I was retrieving 
@@ -12,21 +13,25 @@ that the view controller has a table view with the correct number of entries. Th
 verifies that the data retrieved from the web api is stored correctly and has all the correct properties. 
 
 Platform chosen:
+
 I chose to go with iOS with a minimum supported version of iOS 6. The reason I picked iOS was mainly because I was more familiar
 with the UIKit and the TableView Framework in iOS more. Since this project was timeboxed, it is not optimized for iPad or landscape
 more yet. 
 
 Features completed:
+
 A basic view with a list of contacts using the Random user api. Each entry in the table view contains the user's first and last
 names, email, cell phone number, home phone number as well as a thumbnail of their image. 
 
 Given more time, what other features I would have added:
+
 As mentioned earlier, with more time I would have added iPad and landscape support. I also would have added messages in the UI,
 had something gone wrong when retrieving info from the web api. Currently, only the successful retrieval is handled and shown to
 the user. Another feature, I would love to add is the ablility to click into each entry in the table and see more info about each
 user. 
 
 Given more time, what I would have done to make the code more robust:
+
 First, I would write more test cases around the web request. I would write test that verifies a connection can be established
 and date is retrieved properly. I would also verify the json response from that request has all the fields we expect.
 
@@ -42,11 +47,13 @@ corrected to handle network failures. I would check for these error cases and wi
 flows that communicates to the user when a network related failure occurs. 
 
 Deployment requirements and instructions:
+
 You need to have xcode 6.1.1 or later installed on your mac. 
 Open KineticChallenge.xcodeproj in xcode. Press run to run on a simulator. 
 If you wish to run on a device, you will need to sign the application and run on a provisioned iOS device.
 
 Testing Instructions:
+
 Open the KineticChallenge.xcodeproj in xcode.
 Press 'Product' menu at the top and click on 'Test'.
 The console will then tell you how many success/failures occured from that run. 

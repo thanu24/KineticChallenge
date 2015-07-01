@@ -16,7 +16,7 @@ Platform chosen:
 
 I chose to go with iOS with a minimum supported version of iOS 6. The reason I picked iOS was mainly because I was more familiar
 with the UIKit and the TableView Framework in iOS more. Since this project was timeboxed, it is not optimized for iPad or landscape
-more yet. 
+mode yet. 
 
 Features completed:
 
@@ -32,10 +32,10 @@ user.
 
 Given more time, what I would have done to make the code more robust:
 
-First, I would write more test cases around the web request. I would write test that verifies a connection can be established
-and date is retrieved properly. I would also verify the json response from that request has all the fields we expect.
+Firstly, I would write more test cases around the web request. I would write test that verifies a connection can be established
+and data is retrieved properly. I would also verify the json response from that request has all the fields we expect.
 
-I would also, refactor the web request code out of the ContactList model. Since this was a fairly small project that just does
+I would also, refactor the web request code out of the ContactList class. Since this was a fairly small project that just does
 this one thing and the time constraint I was under, I didn't make it as extensible as I would have liked. With more time, I would
 make the web request, response handling and error checking abstract so it can be a service that can be used by other features 
 through out the application.
@@ -56,5 +56,5 @@ Testing Instructions:
 
 Open the KineticChallenge.xcodeproj in xcode.
 Press 'Product' menu at the top and click on 'Test'.
-The console will then tell you how many success/failures occured from that run. 
+The console will then tell you how many successes and failures occured from that run. 
 

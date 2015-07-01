@@ -48,10 +48,14 @@
     cell.cellLabel.text = user.cellNumber;
     cell.phoneLabel.text = user.phoneNumber;
     
-    NSURL *url = [NSURL URLWithString:user.imageUrl];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    UIImage *image = [UIImage imageWithData:data];
-    cell.userImageView.image = image;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSURL *url = [NSURL URLWithString:user.imageUrl];
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        UIImage *image = [UIImage imageWithData:data];
+        dispatch_async(dispatch_get_main_queue(), ^(void){
+            cell.userImageView.image = image;
+        });
+    });
     
     return cell;
 }

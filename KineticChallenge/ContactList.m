@@ -28,10 +28,16 @@ NSString *const MediumPictureKey = @"medium";
 - (id)initWithCount:(long) count
 {
     self = [super init];
+    
+    // Make the Random User request.
+    // API Doc: https://randomuser.me/documentation
     NSString *url = [NSString stringWithFormat:@"%@%ld", RandomUserBaseUrl, count];
     NSURLRequest * urlRequest = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     NSURLResponse * response = nil;
     NSError * error = nil;
+    
+    // Making a synchronous call since nothing else is being done with this simple app, thus blocking the main thread
+    // is not a big concern.
     NSData * data = [NSURLConnection sendSynchronousRequest:urlRequest
                                           returningResponse:&response
                                                       error:&error];
@@ -49,6 +55,7 @@ NSString *const MediumPictureKey = @"medium";
     return self;
 }
 
+// Parse the result array from the Random user request and store it into an array
 - (void)ParseResultWithResponseArray:(NSArray *)results
 {
     NSMutableArray *userList = [[NSMutableArray alloc] initWithCapacity:[results count]];

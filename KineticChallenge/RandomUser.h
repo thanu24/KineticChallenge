@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+// Model class to store info about the user.
 @interface RandomUser : NSObject
 
 @property (nonatomic,strong) NSString *firstName;

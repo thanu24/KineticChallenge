@@ -50,6 +50,7 @@ long const ContactsCount = 10;
     cell.cellLabel.text = user.cellNumber;
     cell.phoneLabel.text = user.phoneNumber;
     
+    // Make the image loading async to improve table view performance.
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSURL *url = [NSURL URLWithString:user.imageUrl];
         NSData *data = [NSData dataWithContentsOfURL:url];

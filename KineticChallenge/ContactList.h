@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+// This class handles making the Random User request, parsing the data and storing the result.
 @interface ContactList : NSObject
 
 - (id)initWithCount:(long) count;
